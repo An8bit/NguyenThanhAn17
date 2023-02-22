@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          >
+
+          <LinearLayout
+              android:layout_marginRight="10dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:gravity="center"
+              android:orientation="vertical"
+              android:background="@drawable/duongvien_gocvuong"
+
+              >
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Age(In year)"
+                  android:textColor="#881EAE"
+                  android:textSize="24sp" />
+
+
+              <com.google.android.material.textfield.TextInputEditText
+                  android:id="@+id/etAge"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="0"
+                  android:inputType="numberSigned"
+                  android:textColor="#881EAE"
+                  android:textSize="100sp" />
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:gravity="center"
+                  android:orientation="horizontal">
+
+                  <LinearLayout
+                      android:layout_width="wrap_content"
+                      android:layout_height="match_parent"
+
+                      android:gravity="center">
+
+                      <ImageView
+                          android:id="@+id/ivRemoveAge"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:paddingRight="40dp"
+                          android:src="@drawable/baseline_remove_circle_outline_24" />
+
+                      <ImageView
+                          android:id="@+id/ivPlusAge"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:paddingLeft="40dp"
+                          android:src="@drawable/baseline_control_point_24" />
+                  </LinearLayout>
+
+              </LinearLayout>
+          </LinearLayout>
+
+          <LinearLayout
+              android:layout_marginLeft="10dp"
+             android:layout_weight="1"
+             android:background="@drawable/duongvien_gocvuong"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:gravity="center">
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Weight(kg)"
+                  android:textSize="24sp"
+                  android:textColor="#881EAE"
+                  />
+              <com.google.android.material.textfield.TextInputEditText
+                  android:id="@+id/etWeight"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:inputType="numberSigned"
+                  android:text="0"
+                  android:textSize="100sp"
+                  android:textColor="#881EAE"/>
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:layout_weight="1"
+                  android:gravity="center">
+                  <LinearLayout
+                      android:layout_width="wrap_content"
+                      android:layout_height="match_parent"
+
+                      android:gravity="center"
+                      >
+                      <ImageView
+                          android:id="@+id/ivRemoveWeiht"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:paddingRight="40dp"
+                         android:src="@drawable/baseline_remove_circle_outline_24"
+                          />
+                      <ImageView
+                          android:id="@+id/ivPlusWeight"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:paddingLeft="40dp"
+                          android:src="@drawable/baseline_control_point_24"/>
+                  </LinearLayout>
+              </LinearLayout>
+          </LinearLayout>
+      </LinearLayout>
+      <LinearLayout
+          android:layout_marginTop="10dp"
+          android:layout_marginBottom="10dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+
+          >
+          <LinearLayout
+              android:layout_marginRight="20dp"
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:orientation="horizontal"
+              >
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:paddingLeft="290dp"
+                  android:textSize="16sp"
+                  android:textColor="#881EAE"
+                  android:text="cm"/>
+
+              <Switch
+                  android:id="@+id/swCm_or_Fit"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:switchMinWidth="10dp"
+
+
+                  />
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:textColor="#881EAE"
+                  android:text="ft"
+                  android:textSize="16sp"
+                />
+
+          </LinearLayout>
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:gravity="center"
+                  android:textSize="24sp"
+                  android:textColor="#881EAE"
+                  android:text="Height"/>
+          </LinearLayout>
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+
+              >
+              <com.google.android.material.textfield.TextInputEditText
+                  android:id="@+id/etHeightm"
+                  android:layout_width="70dp"
+                  android:layout_height="50dp"
+                  android:inputType="numberSigned"
+                  android:hint="1"
+                  android:textSize="16sp"
+                  android:background="@drawable/duongvien_gocvuong"
+                  >
+              </com.google.android.material.textfield.TextInputEditText>
+              <TextView
+                  android:id="@+id/tvmet"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="m"
+                  android:textSize="24sp"
+                  android:textColor="#881EAE"
+                  android:gravity="center"
+                  android:layout_margin="10dp"
+                  ></TextView>
+              <com.google.android.material.textfield.TextInputEditText
+                  android:id="@+id/etHeightcm"
+                  android:layout_width="70dp"
+                  android:layout_height="50dp"
+                  android:inputType="numberSigned"
+                  android:background="@drawable/duongvien_gocvuong"
+                  android:hint="70"
+                  android:textSize="16sp"
+                  >
+              </com.google.android.material.textfield.TextInputEditText>
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="cm"
+                  android:textSize="24sp"
+                  android:gravity="center"
+                  android:textColor="#881EAE"
+                  android:layout_margin="10dp"
+                  android:id="@+id/tvcm"
+                  ></TextView>
+
+          </LinearLayout>
+
+      </LinearLayout>
+
+    <LinearLayout
+        android:background="@drawable/duongvien_gocvuong"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Gender"
+                android:gravity="center"
+                android:textSize="34sp"
+                android:textColor="#881EAE"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+
+
+            >
+            <TextView
+                android:paddingRight="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="I AM"
+                android:textColor="#881EAE"
+                android:textSize="24sp"
+               />
+            <TextView
+                android:paddingRight="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Female"
+                android:textColor="#881EAE"
+                android:textSize="24sp"
+                />
+            <Switch
+                android:id="@+id/swGender"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="10dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Male"
+                android:textColor="#881EAE"
+                android:textSize="24sp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/btCal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="24dp"
+            android:text="CALCULATOR"></Button>
+    </LinearLayout>
+  </LinearLayout>
+
+
